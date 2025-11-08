@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Identification Quiz — Fire Safety</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>Identification Quiz — Fire Safety Terms</h1>
+        <p style="text-align:center; color:#555; margin-bottom:12px;">Choose the correct term that matches each definition. You must answer each question before moving on.</p>
+        <div class="progress-bar">
+            <div class="progress-fill" id="progress"></div>
+        </div>
+        <div class="question-counter" id="questionCounter">Question 1</div>
+        <div id="quiz"></div>
+        <div class="navigation-buttons">
+            <button class="nav-btn" id="prevBtn" onclick="previousQuestion()" disabled>Previous</button>
+            <button class="nav-btn" id="nextBtn" onclick="nextQuestion()">Next</button>
+        </div>
+        <button class="submit-btn" onclick="checkAnswers()" style="display: none;">Submit Quiz</button>
+        <button class="retry-btn" onclick="resetQuiz()">Try Again</button>
+        <div class="result" id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
